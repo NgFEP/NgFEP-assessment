@@ -6,16 +6,16 @@
 | PMEMD implementation of SANDER, Release 22
 
 |  Compiled date/time: Thu Apr 14 14:06:37 2022
-| Run on 11/03/2023 at 14:05:59
+| Run on 11/09/2023 at 10:08:11
 
 |   Executable path: pmemd.cuda
-| Working directory: /home/saikat/softwares/amber22/benchmarks/jac
+| Working directory: /home/sp2546/softwares/amber22/benchmarks/jac
 |          Hostname: Unknown
   [-O]verwriting output
 
 File Assignments:
 |   MDIN: mdin                                                                  
-|  MDOUT: gpu_cuda_0_4.out                                                      
+|  MDOUT: gpu_cuda_2_4.out                                                      
 | INPCRD: inpcrd.equil                                                          
 |   PARM: prmtop                                                                
 | RESTRT: restrt                                                                
@@ -44,7 +44,7 @@ File Assignments:
  /                                                                             
 
 
-Note: ig = -1. Setting random seed to   287560 based on wallclock time in 
+Note: ig = -1. Setting random seed to   452914 based on wallclock time in 
       microseconds.
 | irandom = 1, using AMBER's internal random number generator (default).
  
@@ -96,13 +96,13 @@ Note: ig = -1. Setting random seed to   287560 based on wallclock time in
  
 |------------------- GPU DEVICE INFO --------------------
 |
-|            CUDA_VISIBLE_DEVICES: 0
+|            CUDA_VISIBLE_DEVICES: 2
 |   CUDA Capable Devices Detected:      1
 |           CUDA Device ID in use:      0
-|                CUDA Device Name: NVIDIA TITAN V
-|     CUDA Device Global Mem Size:  12057 MB
-| CUDA Device Num Multiprocessors:     80
-|           CUDA Device Core Freq:   1.46 GHz
+|                CUDA Device Name: Quadro GP100
+|     CUDA Device Global Mem Size:  16278 MB
+| CUDA Device Num Multiprocessors:     56
+|           CUDA Device Core Freq:   1.44 GHz
 |
 |--------------------------------------------------------
  
@@ -214,8 +214,8 @@ Ewald parameters:
 | Nonbonded Pairs Initial Allocation:     3934774
 
 | GPU memory information (estimate):
-| KB of GPU memory in use:     79557
-| KB of CPU memory in use:     43269
+| KB of GPU memory in use:     76677
+| KB of CPU memory in use:     40389
 
 --------------------------------------------------------------------------------
    4.  RESULTS
@@ -223,115 +223,115 @@ Ewald parameters:
 
 check COM velocity, temp:        0.003907     0.02(Removed)
 
- NSTEP =     1000   TIME(PS) =       8.000  TEMP(K) =   297.16  PRESS =     0.0
- Etot   =    -58138.3319  EKtot   =     14284.9199  EPtot      =    -72423.2518
- BOND   =       426.8731  ANGLE   =      1162.1050  DIHED      =       996.2827
- 1-4 NB =       567.5140  1-4 EEL =      6623.4931  VDWAALS    =      8517.6772
- EELEC  =    -90717.1967  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     1000   TIME(PS) =       8.000  TEMP(K) =   297.62  PRESS =     0.0
+ Etot   =    -58140.2022  EKtot   =     14306.9766  EPtot      =    -72447.1787
+ BOND   =       426.0117  ANGLE   =      1166.1886  DIHED      =       985.0045
+ 1-4 NB =       564.0904  1-4 EEL =      6660.3631  VDWAALS    =      8307.3422
+ EELEC  =    -90556.1792  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =     2000   TIME(PS) =      10.000  TEMP(K) =   297.55  PRESS =     0.0
- Etot   =    -58140.2134  EKtot   =     14303.7812  EPtot      =    -72443.9946
- BOND   =       454.1913  ANGLE   =      1208.8173  DIHED      =       979.0959
- 1-4 NB =       550.2279  1-4 EEL =      6568.2453  VDWAALS    =      8422.8098
- EELEC  =    -90627.3821  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     2000   TIME(PS) =      10.000  TEMP(K) =   297.20  PRESS =     0.0
+ Etot   =    -58139.2217  EKtot   =     14286.9678  EPtot      =    -72426.1895
+ BOND   =       445.3631  ANGLE   =      1215.9357  DIHED      =       983.0958
+ 1-4 NB =       557.8684  1-4 EEL =      6572.5521  VDWAALS    =      8258.1360
+ EELEC  =    -90459.1407  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =     3000   TIME(PS) =      12.000  TEMP(K) =   298.55  PRESS =     0.0
- Etot   =    -58143.1882  EKtot   =     14351.6133  EPtot      =    -72494.8015
- BOND   =       443.7472  ANGLE   =      1205.5367  DIHED      =       977.2102
- 1-4 NB =       548.6719  1-4 EEL =      6578.2996  VDWAALS    =      8453.6566
- EELEC  =    -90701.9236  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     3000   TIME(PS) =      12.000  TEMP(K) =   296.69  PRESS =     0.0
+ Etot   =    -58142.0891  EKtot   =     14262.4424  EPtot      =    -72404.5315
+ BOND   =       416.9734  ANGLE   =      1252.9508  DIHED      =       985.1443
+ 1-4 NB =       546.4054  1-4 EEL =      6607.0640  VDWAALS    =      8463.4921
+ EELEC  =    -90676.5615  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =     4000   TIME(PS) =      14.000  TEMP(K) =   295.64  PRESS =     0.0
- Etot   =    -58140.1782  EKtot   =     14211.8037  EPtot      =    -72351.9819
- BOND   =       459.7191  ANGLE   =      1201.4001  DIHED      =      1002.0927
- 1-4 NB =       552.3815  1-4 EEL =      6643.0111  VDWAALS    =      8505.6566
- EELEC  =    -90716.2429  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     4000   TIME(PS) =      14.000  TEMP(K) =   298.18  PRESS =     0.0
+ Etot   =    -58141.4779  EKtot   =     14333.8672  EPtot      =    -72475.3451
+ BOND   =       455.0913  ANGLE   =      1218.8045  DIHED      =       996.3337
+ 1-4 NB =       543.1768  1-4 EEL =      6582.7285  VDWAALS    =      8527.2787
+ EELEC  =    -90798.7584  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =     5000   TIME(PS) =      16.000  TEMP(K) =   294.59  PRESS =     0.0
- Etot   =    -58140.5655  EKtot   =     14161.1748  EPtot      =    -72301.7403
- BOND   =       449.2318  ANGLE   =      1202.8589  DIHED      =       974.2607
- 1-4 NB =       548.0979  1-4 EEL =      6603.6525  VDWAALS    =      8474.6387
- EELEC  =    -90554.4807  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     5000   TIME(PS) =      16.000  TEMP(K) =   294.85  PRESS =     0.0
+ Etot   =    -58138.8290  EKtot   =     14173.7266  EPtot      =    -72312.5555
+ BOND   =       470.8925  ANGLE   =      1299.8922  DIHED      =       981.3189
+ 1-4 NB =       539.5499  1-4 EEL =      6579.9186  VDWAALS    =      8559.2165
+ EELEC  =    -90743.3442  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =     6000   TIME(PS) =      18.000  TEMP(K) =   296.57  PRESS =     0.0
- Etot   =    -58139.4653  EKtot   =     14256.2793  EPtot      =    -72395.7446
- BOND   =       465.8933  ANGLE   =      1267.2062  DIHED      =       983.7426
- 1-4 NB =       538.2283  1-4 EEL =      6562.2446  VDWAALS    =      8231.6235
- EELEC  =    -90444.6830  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     6000   TIME(PS) =      18.000  TEMP(K) =   296.00  PRESS =     0.0
+ Etot   =    -58138.1106  EKtot   =     14228.8867  EPtot      =    -72366.9973
+ BOND   =       459.3627  ANGLE   =      1243.6477  DIHED      =      1013.3199
+ 1-4 NB =       550.2355  1-4 EEL =      6617.3037  VDWAALS    =      8548.1857
+ EELEC  =    -90799.0526  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =     7000   TIME(PS) =      20.000  TEMP(K) =   298.79  PRESS =     0.0
- Etot   =    -58142.0416  EKtot   =     14362.9512  EPtot      =    -72504.9928
- BOND   =       426.1386  ANGLE   =      1248.9218  DIHED      =       991.3344
- 1-4 NB =       559.9435  1-4 EEL =      6593.2982  VDWAALS    =      8367.0192
- EELEC  =    -90691.6484  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     7000   TIME(PS) =      20.000  TEMP(K) =   295.25  PRESS =     0.0
+ Etot   =    -58141.6587  EKtot   =     14193.1914  EPtot      =    -72334.8501
+ BOND   =       484.0583  ANGLE   =      1246.2481  DIHED      =       982.1917
+ 1-4 NB =       537.1261  1-4 EEL =      6593.3941  VDWAALS    =      8019.1907
+ EELEC  =    -90197.0592  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =     8000   TIME(PS) =      22.000  TEMP(K) =   295.88  PRESS =     0.0
- Etot   =    -58142.1269  EKtot   =     14223.0762  EPtot      =    -72365.2031
- BOND   =       491.3085  ANGLE   =      1183.0293  DIHED      =       982.6474
- 1-4 NB =       553.9288  1-4 EEL =      6637.4438  VDWAALS    =      8229.6134
- EELEC  =    -90443.1741  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     8000   TIME(PS) =      22.000  TEMP(K) =   297.60  PRESS =     0.0
+ Etot   =    -58141.0963  EKtot   =     14306.0225  EPtot      =    -72447.1188
+ BOND   =       457.3684  ANGLE   =      1290.6632  DIHED      =       998.2455
+ 1-4 NB =       545.0164  1-4 EEL =      6540.8120  VDWAALS    =      8318.6234
+ EELEC  =    -90597.8477  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =     9000   TIME(PS) =      24.000  TEMP(K) =   294.05  PRESS =     0.0
- Etot   =    -58139.4998  EKtot   =     14135.2354  EPtot      =    -72274.7351
- BOND   =       483.3370  ANGLE   =      1249.0010  DIHED      =       972.0853
- 1-4 NB =       550.3118  1-4 EEL =      6579.9611  VDWAALS    =      8336.8290
- EELEC  =    -90446.2603  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =     9000   TIME(PS) =      24.000  TEMP(K) =   294.75  PRESS =     0.0
+ Etot   =    -58140.6706  EKtot   =     14169.1455  EPtot      =    -72309.8161
+ BOND   =       487.2664  ANGLE   =      1317.4809  DIHED      =      1025.5971
+ 1-4 NB =       536.1204  1-4 EEL =      6530.6771  VDWAALS    =      8252.2439
+ EELEC  =    -90459.2020  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 check COM velocity, temp:        0.000000     0.00(Removed)
 
- NSTEP =    10000   TIME(PS) =      26.000  TEMP(K) =   298.35  PRESS =     0.0
- Etot   =    -58143.0755  EKtot   =     14341.8564  EPtot      =    -72484.9320
- BOND   =       488.2823  ANGLE   =      1248.4944  DIHED      =       997.3974
- 1-4 NB =       536.8826  1-4 EEL =      6609.1866  VDWAALS    =      8297.7160
- EELEC  =    -90662.8914  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =    10000   TIME(PS) =      26.000  TEMP(K) =   298.10  PRESS =     0.0
+ Etot   =    -58141.7862  EKtot   =     14330.0996  EPtot      =    -72471.8858
+ BOND   =       493.4387  ANGLE   =      1288.4954  DIHED      =      1004.3968
+ 1-4 NB =       534.4256  1-4 EEL =      6576.6569  VDWAALS    =      8341.8741
+ EELEC  =    -90711.1734  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 
       A V E R A G E S   O V E R      10 S T E P S
 
 
- NSTEP =    10000   TIME(PS) =      26.000  TEMP(K) =   296.71  PRESS =     0.0
- Etot   =    -58140.8686  EKtot   =     14263.2691  EPtot      =    -72404.1378
- BOND   =       458.8722  ANGLE   =      1217.7371  DIHED      =       985.6149
- 1-4 NB =       550.6188  1-4 EEL =      6599.8836  VDWAALS    =      8383.7240
- EELEC  =    -90600.5883  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ NSTEP =    10000   TIME(PS) =      26.000  TEMP(K) =   296.63  PRESS =     0.0
+ Etot   =    -58140.5142  EKtot   =     14259.1326  EPtot      =    -72399.6469
+ BOND   =       459.5826  ANGLE   =      1254.0307  DIHED      =       995.4648
+ 1-4 NB =       545.4015  1-4 EEL =      6586.1470  VDWAALS    =      8359.5583
+ EELEC  =    -90599.8319  EHBOND  =         0.0000  RESTRAINT  =         0.0000
  ------------------------------------------------------------------------------
 
 
       R M S  F L U C T U A T I O N S
 
 
- NSTEP =    10000   TIME(PS) =      26.000  TEMP(K) =     1.57  PRESS =     0.0
- Etot   =         1.5648  EKtot   =        75.6016  EPtot      =        76.4265
- BOND   =        22.3711  ANGLE   =        32.1860  DIHED      =         9.9713
- 1-4 NB =         8.5969  1-4 EEL =        26.9309  VDWAALS    =       102.1053
- EELEC  =       111.8761  EHBOND  =         0.0000  RESTRAINT  =         0.0000
-|E(PBS) =         3.0063
+ NSTEP =    10000   TIME(PS) =      26.000  TEMP(K) =     1.26  PRESS =     0.0
+ Etot   =         1.3071  EKtot   =        60.4566  EPtot      =        60.9172
+ BOND   =        24.1029  ANGLE   =        43.8598  DIHED      =        14.3535
+ 1-4 NB =         9.1843  1-4 EEL =        35.2510  VDWAALS    =       160.2323
+ EELEC  =       179.4009  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+|E(PBS) =         3.5267
  ------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
@@ -342,15 +342,15 @@ check COM velocity, temp:        0.000000     0.00(Removed)
 |
 |     Routine           Sec        %
 |     ------------------------------
-|     Nonbond           0.88   22.79
+|     Nonbond           0.51   12.15
 |     Bond              0.00    0.00
 |     Angle             0.00    0.00
 |     Dihedral          0.00    0.00
-|     Shake             0.08    2.06
-|     RunMD             2.89   74.63
-|     Other             0.02    0.51
+|     Shake             0.04    0.86
+|     RunMD             3.60   86.54
+|     Other             0.02    0.45
 |     ------------------------------
-|     Total             3.87
+|     Total             4.16
 
 |  PME Nonbond Pairlist CPU Time:
 |
@@ -386,18 +386,18 @@ check COM velocity, temp:        0.000000     0.00(Removed)
 |  Final Performance Info:
 |     -----------------------------------------------------
 |     Average timings for last    9000 steps:
-|     Elapsed(s) =       3.47 Per Step(ms) =       0.39
-|         ns/day =     448.37   seconds/ns =     192.70
+|     Elapsed(s) =       3.71 Per Step(ms) =       0.41
+|         ns/day =     418.96   seconds/ns =     206.22
 |
 |     Average timings for all steps:
-|     Elapsed(s) =       3.87 Per Step(ms) =       0.39
-|         ns/day =     446.49   seconds/ns =     193.51
+|     Elapsed(s) =       4.16 Per Step(ms) =       0.42
+|         ns/day =     415.02   seconds/ns =     208.18
 |     -----------------------------------------------------
 
-|  Setup CPU time:            2.81 seconds
-|  NonSetup CPU time:         3.87 seconds
-|  Total CPU time:            6.68 seconds     0.00 hours
+|  Setup CPU time:            2.43 seconds
+|  NonSetup CPU time:         4.16 seconds
+|  Total CPU time:            6.60 seconds     0.00 hours
 
 |  Setup wall time:           3    seconds
-|  NonSetup wall time:        4    seconds
-|  Total wall time:           7    seconds     0.00 hours
+|  NonSetup wall time:        5    seconds
+|  Total wall time:           8    seconds     0.00 hours

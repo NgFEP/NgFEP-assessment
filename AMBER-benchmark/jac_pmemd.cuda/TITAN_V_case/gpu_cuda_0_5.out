@@ -6,16 +6,16 @@
 | PMEMD implementation of SANDER, Release 22
 
 |  Compiled date/time: Thu Apr 14 14:06:37 2022
-| Run on 11/03/2023 at 14:05:44
+| Run on 11/09/2023 at 10:11:21
 
 |   Executable path: pmemd.cuda
-| Working directory: /home/saikat/softwares/amber22/benchmarks/jac
+| Working directory: /home/sp2546/softwares/amber22/benchmarks/jac
 |          Hostname: Unknown
   [-O]verwriting output
 
 File Assignments:
 |   MDIN: mdin                                                                  
-|  MDOUT: gpu_cuda_0_2.out                                                      
+|  MDOUT: gpu_cuda_0_5.out                                                      
 | INPCRD: inpcrd.equil                                                          
 |   PARM: prmtop                                                                
 | RESTRT: restrt                                                                
@@ -44,7 +44,7 @@ File Assignments:
  /                                                                             
 
 
-Note: ig = -1. Setting random seed to   886568 based on wallclock time in 
+Note: ig = -1. Setting random seed to   441131 based on wallclock time in 
       microseconds.
 | irandom = 1, using AMBER's internal random number generator (default).
  
@@ -342,13 +342,13 @@ check COM velocity, temp:        0.000000     0.00(Removed)
 |
 |     Routine           Sec        %
 |     ------------------------------
-|     Nonbond           0.85   22.08
+|     Nonbond           0.86   22.35
 |     Bond              0.00    0.00
 |     Angle             0.00    0.00
 |     Dihedral          0.00    0.00
-|     Shake             0.08    1.95
-|     RunMD             2.92   75.45
-|     Other             0.02    0.52
+|     Shake             0.08    2.02
+|     RunMD             2.91   75.12
+|     Other             0.02    0.51
 |     ------------------------------
 |     Total             3.87
 
@@ -367,9 +367,9 @@ check COM velocity, temp:        0.000000     0.00(Removed)
 |     ---------------------------------
 |     NonBonded Calc       0.00    0.00
 |     Exclude Masked       0.00    0.00
-|     Other                0.01    0.28
+|     Other                0.01    0.29
 |     ---------------------------------
-|     Total                0.01    0.28
+|     Total                0.01    0.29
 
 |  PME Reciprocal Force CPU Time:
 |
@@ -386,18 +386,18 @@ check COM velocity, temp:        0.000000     0.00(Removed)
 |  Final Performance Info:
 |     -----------------------------------------------------
 |     Average timings for last    9000 steps:
-|     Elapsed(s) =       3.46 Per Step(ms) =       0.38
-|         ns/day =     449.14   seconds/ns =     192.37
+|     Elapsed(s) =       3.47 Per Step(ms) =       0.39
+|         ns/day =     448.18   seconds/ns =     192.78
 |
 |     Average timings for all steps:
 |     Elapsed(s) =       3.87 Per Step(ms) =       0.39
-|         ns/day =     446.99   seconds/ns =     193.29
+|         ns/day =     446.57   seconds/ns =     193.47
 |     -----------------------------------------------------
 
-|  Setup CPU time:            2.81 seconds
+|  Setup CPU time:            2.86 seconds
 |  NonSetup CPU time:         3.87 seconds
-|  Total CPU time:            6.68 seconds     0.00 hours
+|  Total CPU time:            6.73 seconds     0.00 hours
 
-|  Setup wall time:           3    seconds
+|  Setup wall time:           4    seconds
 |  NonSetup wall time:        4    seconds
-|  Total wall time:           7    seconds     0.00 hours
+|  Total wall time:           8    seconds     0.00 hours

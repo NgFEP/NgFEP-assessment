@@ -6,16 +6,16 @@
 | PMEMD implementation of SANDER, Release 22
 
 |  Compiled date/time: Thu Apr 14 14:06:37 2022
-| Run on 11/03/2023 at 14:06:06
+| Run on 11/09/2023 at 10:11:43
 
 |   Executable path: pmemd.cuda
-| Working directory: /home/saikat/softwares/amber22/benchmarks/jac
+| Working directory: /home/sp2546/softwares/amber22/benchmarks/jac
 |          Hostname: Unknown
   [-O]verwriting output
 
 File Assignments:
 |   MDIN: mdin                                                                  
-|  MDOUT: gpu_cuda_0_5.out                                                      
+|  MDOUT: gpu_cuda_1_3.out                                                      
 | INPCRD: inpcrd.equil                                                          
 |   PARM: prmtop                                                                
 | RESTRT: restrt                                                                
@@ -44,7 +44,7 @@ File Assignments:
  /                                                                             
 
 
-Note: ig = -1. Setting random seed to   482608 based on wallclock time in 
+Note: ig = -1. Setting random seed to    84318 based on wallclock time in 
       microseconds.
 | irandom = 1, using AMBER's internal random number generator (default).
  
@@ -96,7 +96,7 @@ Note: ig = -1. Setting random seed to   482608 based on wallclock time in
  
 |------------------- GPU DEVICE INFO --------------------
 |
-|            CUDA_VISIBLE_DEVICES: 0
+|            CUDA_VISIBLE_DEVICES: 1
 |   CUDA Capable Devices Detected:      1
 |           CUDA Device ID in use:      0
 |                CUDA Device Name: NVIDIA TITAN V
@@ -342,15 +342,15 @@ check COM velocity, temp:        0.000000     0.00(Removed)
 |
 |     Routine           Sec        %
 |     ------------------------------
-|     Nonbond           0.86   22.37
+|     Nonbond           0.78   20.41
 |     Bond              0.00    0.00
 |     Angle             0.00    0.00
 |     Dihedral          0.00    0.00
-|     Shake             0.08    2.08
-|     RunMD             2.87   75.02
-|     Other             0.02    0.52
+|     Shake             0.07    1.81
+|     RunMD             2.93   77.24
+|     Other             0.02    0.53
 |     ------------------------------
-|     Total             3.82
+|     Total             3.80
 
 |  PME Nonbond Pairlist CPU Time:
 |
@@ -386,18 +386,18 @@ check COM velocity, temp:        0.000000     0.00(Removed)
 |  Final Performance Info:
 |     -----------------------------------------------------
 |     Average timings for last    9000 steps:
-|     Elapsed(s) =       3.43 Per Step(ms) =       0.38
-|         ns/day =     453.60   seconds/ns =     190.48
+|     Elapsed(s) =       3.41 Per Step(ms) =       0.38
+|         ns/day =     456.30   seconds/ns =     189.35
 |
 |     Average timings for all steps:
-|     Elapsed(s) =       3.82 Per Step(ms) =       0.38
-|         ns/day =     451.86   seconds/ns =     191.21
+|     Elapsed(s) =       3.80 Per Step(ms) =       0.38
+|         ns/day =     454.77   seconds/ns =     189.98
 |     -----------------------------------------------------
 
-|  Setup CPU time:            2.88 seconds
-|  NonSetup CPU time:         3.82 seconds
-|  Total CPU time:            6.70 seconds     0.00 hours
+|  Setup CPU time:            2.79 seconds
+|  NonSetup CPU time:         3.80 seconds
+|  Total CPU time:            6.59 seconds     0.00 hours
 
-|  Setup wall time:           4    seconds
+|  Setup wall time:           3    seconds
 |  NonSetup wall time:        4    seconds
-|  Total wall time:           8    seconds     0.00 hours
+|  Total wall time:           7    seconds     0.00 hours
