@@ -1,0 +1,22 @@
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:329: SyntaxWarning: invalid escape sequence '\S'
+  "(?:_(.+?)[.](\S+))"               "|"  # _category.attribute
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:331: SyntaxWarning: invalid escape sequence '\s'
+  "(?:['](.*?)(?:[']\s|[']$))"       "|"  # single quoted strings
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:332: SyntaxWarning: invalid escape sequence '\s'
+  "(?:[\"](.*?)(?:[\"]\s|[\"]$))"    "|"  # double quoted strings
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:334: SyntaxWarning: invalid escape sequence '\s'
+  "(?:\s*#.*$)"                      "|"  # comments (dumped)
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:336: SyntaxWarning: invalid escape sequence '\S'
+  "(\S+)"                                 # unquoted words
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:401: SyntaxWarning: invalid escape sequence '\S'
+  "(?:_(.+?)[.](\S+))"               "|"  # _category.attribute
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:403: SyntaxWarning: invalid escape sequence '\s'
+  "(?:['\"](.*?)(?:['\"]\s|['\"]$))" "|"  # quoted strings
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:405: SyntaxWarning: invalid escape sequence '\s'
+  "(?:\s*#.*$)"                      "|"  # comments (dumped)
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/formats/pdbx/PdbxReader.py:407: SyntaxWarning: invalid escape sequence '\S'
+  "(\S+)"                                 # unquoted words
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/amber/parameters.py:28: SyntaxWarning: invalid escape sequence '\s'
+  '%(FLOATRE)s\s+%(FLOATRE)s\s+%(FLOATRE)s' % subs)
+/home/sp2546/softwares/amber22/lib/python3.11/site-packages/parmed/amber/parameters.py:34: SyntaxWarning: invalid escape sequence '\s'
+  '%(FLOATRE)s\s+%(FLOATRE)s\s+%(FLOATRE)s' % subs)
