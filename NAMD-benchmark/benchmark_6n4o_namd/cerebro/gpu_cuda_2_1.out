@@ -1,0 +1,401 @@
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 1 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: 
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (1 sockets x 6 cores x 2 PUs = 12-way SMP)
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Info: Built with CUDA version 11080
+Did not find +devices i,j,k,... argument, using all
+Pe 0 physical rank 0 binding to CUDA device 0 on cerebro: 'Quadro GP100'  Mem: 16273MB  Rev: 6.0  PCI: 0:9:0
+Info: NAMD 3.0b5 for Linux-x86_64-multicore-CUDA
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 70000 for multicore-linux-x86_64-gcc
+Info: Built Mon Nov 6 08:32:17 CST 2023 by dhardy on athine.ks.uiuc.edu
+Info: 1 NAMD  3.0b5  Linux-x86_64-multicore-CUDA  1    cerebro  sp2546
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 2.65646 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 0 MB of memory in use based on /proc/self/stat
+Info: Configuration file is namd3_input.in
+Info: Working in the current directory /home/sp2546/benchmark/NAMD/benchmark_6n4o_namd
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   equilibration.xsc
+Info: Tuning parameters to improve CUDASOAintegrate performance
+Info: Setting margin to 4
+Warning: Disabling lonepair support due to incompatability with SOA.
+Info: Using SOA integration routine
+Info: Running with CUDA SOA integration mode
+Warning: Always using force tables for CUDA nonbonded kernel due to unsupported config parameters.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               1
+Info: NUMBER OF STEPS        100000
+Info: STEPS PER CYCLE        10
+Info: PERIODIC CELL BASIS 1  133.931 0 0
+Info: PERIODIC CELL BASIS 2  0 133.931 0
+Info: PERIODIC CELL BASIS 3  0 0 133.931
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             2000 steps
+Info: FIRST LDB TIMESTEP     50
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: EMPTY PATCH LOAD       40 ATOMS
+Info: VELOCITY FILE          equilibration.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 0.833333
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           _prod.dcd
+Info: DCD FREQUENCY          100000
+Info: DCD FIRST STEP         100000
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        _prod
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       _prod.restart
+Info: RESTART FREQUENCY      100000
+Info: BINARY RESTART FILES WILL BE USED
+Info: CUTOFF                 8
+Info: PAIRLIST DISTANCE      11
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 4
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        17.5
+Info: ENERGY OUTPUT STEPS    2000
+Info: ENERGY EVALUATION STEPS    2000
+Info: OUTPUT ENERGY PRECISION 4
+Info: OUPUT ENERGY PRECISION 4
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    100000
+Info: PRESSURE OUTPUT STEPS  100000
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   300
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS APPLIED TO HYDROGENS
+Info: LANGEVIN PISTON PRESSURE CONTROL ACTIVE
+Info:        TARGET PRESSURE IS 1 BAR
+Info:     OSCILLATION PERIOD IS 200 FS
+Info:             DECAY TIME IS 100 FS
+Info:     PISTON TEMPERATURE IS 300 K
+Info:       PRESSURE CONTROL IS GROUP-BASED
+Info:    INITIAL STRAIN RATE IS -1.05525e-05 -1.05525e-05 -1.05525e-05
+Info:       CELL FLUCTUATION IS ISOTROPIC
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.39467
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         144 144 144
+Info: PME MAXIMUM GRID SPACING    1.5
+Info: Attempting to read FFTW data from FFTW_NAMD_3.0b5_Linux-x86_64-multicore-CUDA.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_3.0b5_Linux-x86_64-multicore-CUDA.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      1
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1702316431
+Info: USE HYDROGEN BONDS?    NO
+Info: Using AMBER format force field!
+Info: AMBER PARM FILE        prmtop.parm7
+Info: AMBER COORDINATE FILE  inpcrd.rst7
+Info: Exclusions will be read from PARM file!
+Info: SCNB (VDW SCALING)     2
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     equilibration.coor
+Info: === Start reading AMBER parm7 format file prmtop.parm7 ===
+Info: Complete reading ATOM_NAME with 239131 fields.
+Info: Complete reading CHARGE with 239131 fields.
+Info: Complete reading ATOMIC_NUMBER with 239131 fields.
+Info: Complete reading MASS with 239131 fields.
+Info: Complete reading ATOM_TYPE_INDEX with 239131 fields.
+Info: Complete reading NUMBER_EXCLUDED_ATOMS with 239131 fields.
+Info: Complete reading NONBONDED_PARM_INDEX with 484 fields.
+Info: Complete reading RESIDUE_LABEL with 75880 fields.
+Info: Complete reading RESIDUE_POINTER with 75880 fields.
+Info: Complete reading BOND_FORCE_CONSTANT with 105 fields.
+Info: Complete reading BOND_EQUIL_VALUE with 105 fields.
+Info: Complete reading ANGLE_FORCE_CONSTANT with 242 fields.
+Info: Complete reading ANGLE_EQUIL_VALUE with 242 fields.
+Info: Complete reading DIHEDRAL_FORCE_CONSTANT with 235 fields.
+Info: Complete reading DIHEDRAL_PERIODICITY with 235 fields.
+Info: Complete reading DIHEDRAL_PHASE with 235 fields.
+Info: Complete reading SCEE_SCALE_FACTOR with 235 fields.
+Info: Complete reading SCNB_SCALE_FACTOR with 235 fields.
+Info: Complete reading LENNARD_JONES_ACOEF with 253 fields.
+Info: Complete reading LENNARD_JONES_BCOEF with 253 fields.
+Info: Complete reading BONDS_INC_HYDROGEN with 693153 fields.
+Info: Complete reading BONDS_WITHOUT_HYDROGEN with 23871 fields.
+Info: Complete reading ANGLES_INC_HYDROGEN with 66164 fields.
+Info: Complete reading ANGLES_WITHOUT_HYDROGEN with 43948 fields.
+Info: Complete reading DIHEDRALS_INC_HYDROGEN with 168820 fields.
+Info: Complete reading DIHEDRALS_WITHOUT_HYDROGEN with 164850 fields.
+Info: Complete reading EXCLUDED_ATOMS_LIST with 381658 fields.
+Info: Complete reading HBOND_ACOEF with 1 fields.
+Info: Complete reading HBOND_BCOEF with 1 fields.
+Info: Complete reading AMBER_ATOM_TYPE with 239131 fields.
+Info: Complete reading TREE_CHAIN_CLASSIFICATION with 239131 fields.
+Info: Complete reading ATOMS_PER_MOLECULE with 74985 fields.
+Info: Complete reading BOX_DIMENSIONS with 4 fields.
+Info: Complete reading RADIUS_SET with 1 fields.
+Info: Complete reading RADII with 239131 fields.
+Info: Complete reading SCREEN with 239131 fields.
+Info: === Finish reading AMBER parm7 format file. ===
+Warning: Encounter 10-12 H-bond term
+Warning: Found 74595 H-H bonds.
+Info: SUMMARY OF PARAMETERS:
+Info: 105 BONDS
+Info: 242 ANGLES
+Info:   242 HARMONIC
+Info:   0 COSINE-BASED
+Info: 235 DIHEDRAL
+Info: 0 IMPROPER
+Info: 0 CROSSTERM
+Info: 0 VDW
+Info: 253 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PDB FILE: 4.157e-06
+Info: 
+Info: LONG-RANGE LJ: APPLYING ANALYTICAL CORRECTIONS TO ENERGY AND PRESSURE
+Info: LONG-RANGE LJ: AVERAGE A AND B COEFFICIENTS 527247 AND 521.626
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 239131 ATOMS
+Info: 239008 BONDS
+Info: 27528 ANGLES
+Info: 66734 DIHEDRALS
+Info: 0 IMPROPERS
+Info: 0 CROSSTERMS
+Info: 305924 EXCLUSIONS
+Info: 231074 RIGID BONDS
+Info: 486319 DEGREES OF FREEDOM
+Info: 82652 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 82652 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 1.46497e+06 amu
+Info: TOTAL CHARGE = -3.09271e-05 e
+Info: MASS DENSITY = 1.01262 g/cm^3
+Info: ATOM DENSITY = 0.0995391 atoms/A^3
+Info: *****************************
+Info: Reading from binary file equilibration.coor
+Info: 
+Info: Entering startup at 3.4839 s, 0 MB of memory in use
+Info: Startup phase 0 took 7.1915e-05 s, 0 MB of memory in use
+Info: ADDED 0 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.0655751 s, 0 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 705 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000290484 AT 0.251946
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.00014439 AT 7.98044
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE FORCE: 5.25066e-27 AT 7.99609
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE FORCE: 2.11758e-21 AT 7.99609
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.00032331 s, 0 MB of memory in use
+Info: Startup phase 3 took 2.2977e-05 s, 0 MB of memory in use
+Info: Startup phase 4 took 0.000181803 s, 0 MB of memory in use
+Info: Startup phase 5 took 2.0056e-05 s, 0 MB of memory in use
+Info: PATCH GRID IS 7 (PERIODIC) BY 7 (PERIODIC) BY 7 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file equilibration.vel
+Info: REMOVING COM VELOCITY -0.0124497 0.0121635 0.012263
+Info: LARGEST PATCH (299) HAS 782 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0492631 s, 0 MB of memory in use
+Info: Use 3D box decompostion in PME FFT.
+Info: PME using 1 x 1 x 1 pencil grid for FFT and reciprocal sum.
+Info: Startup phase 7 took 0.000112553 s, 0 MB of memory in use
+Info: Updated CUDA force table with 4096 elements.
+Info: Updated CUDA LJ table with 22 x 22 elements.
+Info: Startup phase 8 took 0.00138779 s, 0 MB of memory in use
+Info: Startup phase 9 took 5.4958e-05 s, 0 MB of memory in use
+Info: Startup phase 10 took 1.9524e-05 s, 0 MB of memory in use
+Info: Startup phase 11 took 0.00160977 s, 0 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.00238958 s, 0 MB of memory in use
+Info: CREATING 7211 COMPUTE OBJECTS
+Info: Found 474 unique exclusion lists needing 1716 bytes
+Info: Startup phase 13 took 0.0494099 s, 0 MB of memory in use
+Info: Startup phase 14 took 6.1414e-05 s, 0 MB of memory in use
+Info: Startup phase 15 took 0.000680632 s, 0 MB of memory in use
+Info: Finished startup at 3.65508 s, 0 MB of memory in use
+
+PRESSURE: 0 -125.078 -65.9407 -29.7632 -63.2772 64.1245 92.8346 35.4462 132.364 -47.6438
+GPRESSURE: 0 -120.936 -112.519 16.2826 -26.4912 64.5295 76.4662 36.5375 102.372 -52.2819
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0      2909.7332      7770.8359     12145.8288         0.0000        -910287.9016    103150.5249         0.0000         0.0000    145407.1481        -638903.8308       300.9227   -784310.9788   -638799.7940       300.9227            -36.1990       -36.2293   2402382.7696       -36.1990       -36.2293
+
+Info: Initial time: 1 CPUs 0.00605213 s/step 14.276 ns/day 0 MB memory
+Info: Initial time: 1 CPUs 0.005518 s/step 15.6578 ns/day 0 MB memory
+Info: Initial time: 1 CPUs 0.00538248 s/step 16.0521 ns/day 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00533955 s/step 16.1811 ns/day 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00529005 s/step 16.3325 ns/day 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00525422 s/step 16.4439 ns/day 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00522875 s/step 16.524 ns/day 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00520438 s/step 16.6014 ns/day 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00518253 s/step 16.6714 ns/day 0 MB memory
+ENERGY:    2000      2919.5408      7830.4486     12024.9125         0.0000        -909835.5442    103065.7155         0.0000         0.0000    144608.0605        -639386.8663       299.2689   -783994.9268   -639291.7022       300.0573            -12.5215       -20.2789   2399969.0547        10.5585        -0.6952
+
+ENERGY:    4000      2952.5025      7835.8422     12025.4380         0.0000        -909897.3967    103420.1178         0.0000         0.0000    145385.3077        -638278.1885       300.8775   -783663.4962   -638190.4113       300.2121             97.6186        75.8142   2398118.9315        12.5681         1.4613
+
+ENERGY:    6000      2857.1338      7808.4792     12038.9875         0.0000        -910926.6661    104143.3261         0.0000         0.0000    145444.9311        -638633.8085       301.0009   -784078.7396   -638541.8710       300.4682            112.3953        95.1793   2398898.2064        11.0839         0.0556
+
+ENERGY:    8000      2880.9685      7792.4662     11979.0190         0.0000        -909614.8691    103115.8772         0.0000         0.0000    145519.7965        -638326.7416       301.1558   -783846.5381   -638216.6705       300.4335             14.5480         8.7285   2397603.2810        14.1117         3.2331
+
+ENERGY:   10000      2888.0364      7697.3906     12075.7769         0.0000        -910252.5016    103734.1985         0.0000         0.0000    144713.8404        -639143.2587       299.4879   -783857.0991   -639071.8786       300.0482             87.8998        80.1391   2400800.1009        10.2058        -0.7551
+
+ENERGY:   12000      2945.5138      7911.2897     12014.6561         0.0000        -910842.0948    103381.1223         0.0000         0.0000    145009.8055        -639579.7074       300.1004   -784589.5129   -639481.3238       299.8523             60.1358        48.0150   2392743.4069         9.7511        -0.9643
+
+ENERGY:   14000      2916.8740      7828.2118     11969.2151         0.0000        -910959.6539    103303.5361         0.0000         0.0000    144843.0356        -640098.7813       299.7552   -784941.8169   -640027.3101       299.7401             25.8967        17.2034   2397270.7882        11.9857         0.9535
+
+ENERGY:   16000      2908.6721      7874.3671     12090.8125         0.0000        -911010.0190    103711.7477         0.0000         0.0000    145054.5618        -639369.8577       300.1930   -784424.4196   -639268.4927       299.7474              4.6315        -4.6392   2400325.8188        10.3051        -0.8835
+
+ENERGY:   18000      2930.6049      7942.6809     12054.1878         0.0000        -909963.5588    103094.5467         0.0000         0.0000    144504.8470        -639436.6916       299.0553   -783941.5386   -639358.0131       300.0998            -28.0083       -25.4778   2399451.8637        11.2563         0.4915
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   20000      2872.9830      7860.2595     12059.6595         0.0000        -909935.6924    103294.2998         0.0000         0.0000    144738.2462        -639110.2444       299.5384   -783848.4906   -639021.2374       300.0638            -23.8091       -30.1954   2403162.5433        11.6517         0.8295
+
+ENERGY:   22000      2961.7986      7852.5663     12072.0189         0.0000        -910759.5465    103307.3573         0.0000         0.0000    145065.1246        -639500.6808       300.2148   -784565.8054   -639409.6374       300.2744            -46.7947       -63.8474   2402080.3485        12.6039         1.7275
+
+ENERGY:   24000      2863.2175      7907.8053     12050.0057         0.0000        -910773.5167    103426.6196         0.0000         0.0000    144722.5096        -639803.3590       299.5058   -784525.8686   -639714.3704       299.4687              7.7357        -3.3930   2400001.6315        13.8673         2.9434
+
+ENERGY:   26000      2800.0858      7793.2833     12110.8635         0.0000        -910238.6889    103234.7876         0.0000         0.0000    145463.9595        -638835.7092       301.0402   -784299.6687   -638745.8218       299.8581             -3.1145        -6.2780   2399204.0476        10.7551        -0.3541
+
+ENERGY:   28000      2849.8570      7879.7066     12035.0095         0.0000        -909647.3168    102956.0647         0.0000         0.0000    144863.8042        -639062.8749       299.7982   -783926.6792   -638976.5850       299.9638            -25.1798       -30.7510   2402827.1677        11.4400         0.5420
+
+ENERGY:   30000      2967.6107      7861.3737     12047.5528         0.0000        -910173.1686    103183.8257         0.0000         0.0000    144943.5704        -639169.2353       299.9633   -784112.8057   -639070.8532       300.1090             12.4798        -3.4322   2400875.4110        11.7816         0.8505
+
+ENERGY:   32000      2875.2452      7913.6740     11987.8789         0.0000        -910528.9596    103877.8396         0.0000         0.0000    145229.0795        -638645.2424       300.5542   -783874.3219   -638558.3539       300.4192             70.8954        57.5917   2404059.7616        12.8754         1.8375
+
+ENERGY:   34000      2933.3148      7936.5163     12074.7759         0.0000        -910983.0070    103427.5944         0.0000         0.0000    145037.7819        -639573.0237       300.1583   -784610.8056   -639474.0153       300.0536            -27.8346       -38.9286   2400577.8429        13.6464         2.4882
+
+ENERGY:   36000      2928.5460      7813.5233     12057.2751         0.0000        -910111.8500    102662.6859         0.0000         0.0000    144791.7715        -639858.0482       299.6491   -784649.8197   -639756.5692       299.8033           -131.8641      -134.8314   2402678.6316        14.8278         3.9234
+
+ENERGY:   38000      2993.1665      7869.0300     12011.6177         0.0000        -911237.2728    103712.2847         0.0000         0.0000    144866.2630        -639784.9109       299.8033   -784651.1739   -639684.5684       299.5338            -33.7539       -41.1393   2402676.2730        10.5183        -0.5213
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   40000      2865.7070      7888.7112     12004.4315         0.0000        -910782.3621    103482.3310         0.0000         0.0000    145045.9979        -639495.1835       300.1753   -784541.1814   -639384.1575       299.7509             61.8486        55.7217   2400501.7081        12.3448         1.0781
+
+ENERGY:   42000      2987.3278      7860.2916     11957.6077         0.0000        -911036.7507    103806.1464         0.0000         0.0000    144819.3642        -639606.0129       299.7062   -784425.3772   -639511.6949       299.8298             15.0461         5.0163   2398724.1817        13.9646         2.9991
+
+ENERGY:   44000      2892.7654      7772.6480     12004.7536         0.0000        -909857.3401    102921.9076         0.0000         0.0000    145454.2423        -638811.0231       301.0201   -784265.2654   -638713.0730       299.9370            -23.1578       -23.9928   2400167.3680         9.8702        -1.0792
+
+ENERGY:   46000      2900.7308      7770.8747     11968.7984         0.0000        -910040.0762    103077.6978         0.0000         0.0000    145044.0245        -639277.9500       300.1712   -784321.9745   -639190.4140       300.1737            -37.5099       -34.4779   2401130.3524         7.9194        -3.0804
+
+ENERGY:   48000      2876.4475      7809.8050     11996.2991         0.0000        -909394.8208    103132.2502         0.0000         0.0000    145266.3398        -638313.6792       300.6313   -783580.0190   -638219.3060       300.4980             46.7092        37.0519   2402152.7291        10.4322        -0.4414
+
+ENERGY:   50000      2846.7605      7869.1615     12079.6295         0.0000        -909544.5280    102618.5442         0.0000         0.0000    144884.8026        -639245.6296       299.8417   -784130.4322   -639152.5996       300.1180            -76.3953       -82.3716   2401879.8537        11.2313         0.3313
+
+ENERGY:   52000      2920.4858      7906.3272     11985.7018         0.0000        -910344.2309    103410.9270         0.0000         0.0000    144813.6399        -639307.1492       299.6944   -784120.7891   -639232.6879       300.2674             37.6297        29.4907   2399216.0618        10.5904        -0.5482
+
+ENERGY:   54000      2935.0427      7637.0365     12063.9010         0.0000        -910469.9757    103483.1521         0.0000         0.0000    144825.8543        -639524.9892       299.7197   -784350.8434   -639418.5181       299.8382             -2.8701       -21.5529   2404953.7602        13.4973         2.5467
+
+ENERGY:   56000      2906.9191      7790.9962     11981.4152         0.0000        -910347.0351    104086.3988         0.0000         0.0000    145256.6185        -638324.6873       300.6111   -783581.3058   -638232.2125       300.3436            109.1309       101.0807   2400666.2039        13.7252         2.8577
+
+ENERGY:   58000      2879.5744      7653.5900     12040.9970         0.0000        -908931.6255    103118.7347         0.0000         0.0000    144687.4117        -638551.3177       299.4332   -783238.7293   -638465.7643       300.1203             15.1244         4.2117   2401698.9704        11.7717         0.8258
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   60000      2901.5429      7820.2003     12030.8594         0.0000        -909588.7842    102649.6393         0.0000         0.0000    145241.9858        -638944.5565       300.5809   -784186.5423   -638842.1867       300.5570            -31.8255       -44.0245   2401621.2082        13.9443         3.0297
+
+ENERGY:   62000      2885.1907      7803.8757     12003.3268         0.0000        -909193.0983    102661.4167         0.0000         0.0000    145042.8197        -638796.4688       300.1687   -783839.2885   -638693.7140       300.1723             -0.2640       -18.4048   2400170.9124        14.9350         4.0696
+
+ENERGY:   64000      2902.9729      7810.2601     12079.9661         0.0000        -910150.4185    103428.5690         0.0000         0.0000    144781.9196        -639146.7308       299.6287   -783928.6504   -639049.9733       300.0309             29.5432        11.2399   2401261.3632         9.6646        -1.2359
+
+ENERGY:   66000      2933.5743      7768.9186     11984.7251         0.0000        -911256.8295    104285.7505         0.0000         0.0000    144773.9475        -639509.9134       299.6122   -784283.8610   -639407.2908       300.0618            121.0068       103.9621   2398121.7525        13.5747         2.8564
+
+ENERGY:   68000      2916.8903      7753.3818     12047.3759         0.0000        -911020.6686    104161.6810         0.0000         0.0000    145068.0618        -639073.2779       300.2209   -784141.3397   -638975.0348       300.1549            118.3444       115.1807   2398743.3545        14.7875         3.8564
+
+ENERGY:   70000      2901.2104      7761.5100     12048.9763         0.0000        -909506.3632    103024.4853         0.0000         0.0000    144579.0484        -639191.1329       299.2089   -783770.1813   -639099.8269       300.0581            -26.7133       -35.8634   2400913.7991        12.4322         1.4494
+
+ENERGY:   72000      2919.9401      7846.4419     12053.7109         0.0000        -909710.5921    102852.9672         0.0000         0.0000    145536.8147        -638500.7173       301.1910   -784037.5320   -638381.6708       300.2042             -5.2969       -24.6347   2402167.3669        11.7754         0.8220
+
+ENERGY:   74000      2910.7337      7778.3461     11977.7177         0.0000        -910556.5479    103548.8957         0.0000         0.0000    144739.0426        -639601.8121       299.5400   -784340.8546   -639508.8715       300.2203             17.6546         9.9769   2398672.5580        10.0717        -0.9057
+
+ENERGY:   76000      2940.7880      7799.0036     12069.6840         0.0000        -910380.7444    103365.1455         0.0000         0.0000    144912.7494        -639293.3739       299.8995   -784206.1233   -639198.3164       300.0359             35.8381        27.3266   2399261.2471        11.3819         0.5392
+
+ENERGY:   78000      2900.7617      7889.7821     12002.6875         0.0000        -910939.8553    103977.2286         0.0000         0.0000    144659.2840        -639510.1115       299.3749   -784169.3954   -639407.0803       299.7390             87.9741        70.4086   2396898.9688        14.0349         2.9310
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   80000      2964.8301      7658.3792     12024.1630         0.0000        -909449.9208    103275.7688         0.0000         0.0000    144942.3948        -638584.3850       299.9609   -783526.7798   -638494.8127       300.0269             -0.2165       -31.0374   2404243.3212         8.4706        -2.5376
+
+ENERGY:   82000      2904.6837      7806.3398     12063.4109         0.0000        -910207.4548    102910.1268         0.0000         0.0000    145457.2960        -639065.5976       301.0264   -784522.8937   -638989.5622       299.9684            -26.0597       -51.3581   2401440.2775        10.1930        -0.6366
+
+ENERGY:   84000      2883.5699      7852.6505     11998.5785         0.0000        -910351.6063    103667.8065         0.0000         0.0000    144794.2816        -639154.7193       299.6543   -783949.0009   -639070.8607       300.4147            125.7798       118.5188   2396764.2662        14.0245         3.3238
+
+ENERGY:   86000      2819.0334      7805.5430     12019.7092         0.0000        -909461.7553    102973.3598         0.0000         0.0000    144954.6136        -638889.4963       299.9861   -783844.1100   -638807.2270       299.9285             14.4570        -2.2960   2402096.9909        11.2695         0.1978
+
+ENERGY:   88000      2881.0577      7850.0116     12051.8674         0.0000        -908910.0659    102634.9697         0.0000         0.0000    144817.8968        -638674.2627       299.7032   -783492.1595   -638562.8552       300.4626            -37.8425       -43.4851   2399214.6327        11.6133         0.6953
+
+ENERGY:   90000      2871.5932      7792.5487     12038.4243         0.0000        -910215.1020    103258.3957         0.0000         0.0000    144779.0930        -639475.0471       299.6229   -784254.1401   -639372.3134       300.2583             63.0086        55.1130   2397318.9298        14.4105         3.5487
+
+ENERGY:   92000      2879.4804      7844.6007     12054.0235         0.0000        -910614.8894    103710.0910         0.0000         0.0000    145019.7454        -639106.9484       300.1209   -784126.6938   -639007.9496       299.7901             67.4236        55.3969   2400644.1326         8.7177        -2.1769
+
+ENERGY:   94000      2938.7176      7742.9078     11999.8754         0.0000        -910005.1562    103329.3545         0.0000         0.0000    145403.7901        -638590.5108       300.9157   -783994.3009   -638492.3703       300.2597             55.2087        52.1063   2397159.5244        11.8899         0.7209
+
+ENERGY:   96000      2943.4827      7816.1544     11987.9256         0.0000        -910338.0156    103399.4124         0.0000         0.0000    145544.8507        -638646.1898       301.2076   -784191.0405   -638547.4720       300.2534             16.7406        -2.5237   2397044.3533        13.3739         2.3110
+
+ENERGY:   98000      2889.9973      7767.9518     11998.7010         0.0000        -910807.8334    103676.0802         0.0000         0.0000    145278.5022        -639196.6008       300.6564   -784475.1029   -639117.2396       300.1838              5.1248         6.2732   2402009.5579        15.0032         4.0748
+
+PRESSURE: 100000 82.8038 -68.0488 -32.1337 -54.2943 84.231 -21.369 7.01094 -25.3563 -79.4552
+GPRESSURE: 100000 64.4281 -62.9202 -54.0914 -26.0344 68.5401 -9.60525 12.5836 -16.4292 -100.199
+PRESSAVG: 100000 12.6815 0.84437 -10.8775 -1.20896 10.5372 -0.433563 -3.46134 1.11096 12.7032
+GPRESSAVG: 100000 1.72532 0.828464 -10.8757 -1.2439 -0.43115 -0.471907 -3.47571 1.12247 1.73952
+TIMING: 100000  CPU: 566.36, 0.00566092/step  Wall: 566.36, 0.00566094/step, 15.2625 ns/days, 0 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 100000  averaging 15.2625 ns/day, 0.00566094 sec/step with standard deviation 0
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  100000      2875.5084      7842.6228     12015.3116         0.0000        -909269.2391    102971.7197         0.0000         0.0000    144684.3535        -638879.7231       299.4268   -783564.0767   -638768.4005       300.2384             29.1932        10.9229   2399621.0627        11.9902         0.9755
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100000
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE _prod.dcd AT STEP 100000
+WRITING COORDINATES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=100000) takes 0.014 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=100000) takes 0.003 seconds, 0.000 MB of memory in use
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 100000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 100000
+CLOSING COORDINATE DCD FILE _prod.dcd
+The last position output (seq=-2) takes 0.031 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 100000
+The last velocity output (seq=-2) takes 0.005 seconds, 0.000 MB of memory in use
+====================================================
+
+WallClock: 570.111389  CPUTime: 569.666626  Memory: 0.000000 MB
+[Partition 0][Node 0] End of program
