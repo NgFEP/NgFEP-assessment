@@ -1,0 +1,6 @@
+model name	: 13th Gen Intel(R) Core(TM) i7-13700K
+awk: 1: unexpected character '\'
+awk: 1: unexpected character '\'
+GPUs, tesla
+rm: cannot remove 'RTX_4070_results_namd.dat': No such file or directory
+Extracted data saved to RTX_4070_results_namd.dat
