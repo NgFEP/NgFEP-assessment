@@ -1,4 +1,4 @@
 git status
 git add ./
-git commit -m "add OPENMM script files"
+git commit -m "add FEP AMBER script files"
 git push -u origin main
