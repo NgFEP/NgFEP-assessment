@@ -1,0 +1,59 @@
+# Amber/(t,s,x)leap generated parm and crd file  
+parmfile       prmtop.parm7  
+ambercoor      inpcrd.rst7
+
+# Input 
+bincoordinates  equilibration.coor
+binvelocities   equilibration.vel
+extendedsystem  equilibration.xsc
+numsteps 100000
+outputtiming 100000
+
+# Output 
+restartfreq         100000      
+dcdfreq             100000 
+outputEnergies      2000
+outputPressure      100000 
+outputname          _prod
+
+# AMBER FF settings
+amber on
+rigidBonds     all 
+useSettle      on 
+rigidTolerance 1.0e-8 
+cutoff         8.0 
+pairlistdist   11.0 
+switching      off 
+exclude        scaled1-4 
+readexclusions yes 
+1-4scaling     0.83333333 
+scnb           2.0 
+ljcorrection   on
+
+# Integrator Parameters 
+timestep            1.0 
+nonbondedFreq       1 
+fullElectFrequency  1 
+stepspercycle       10 
+wrapAll on
+CUDASOAintegrate on
+
+# Temperature control
+langevin on
+langevinTemp 300
+langevinDamping 1.0
+
+# Pressure control
+useGroupPressure yes
+LangevinPiston on
+LangevinPistonTarget 1.0
+LangevinPistonPeriod 200
+LangevinPistonDecay 100
+LangevinPistonTemp 300
+
+# PME settings 
+PME                 on 
+PMEGridSizeX        144 
+PMEGridSizeY        144 
+PMEGridSizeZ        144 
+
