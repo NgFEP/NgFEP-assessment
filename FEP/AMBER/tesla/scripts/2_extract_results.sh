@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Output file
-output_file="GTX_1080_Ti_results_amber.dat"
+output_file="RTX_4070_results_amber.dat"
 temp_file="tmpl"
 
 # Clear the output and temporary files if they already exist
