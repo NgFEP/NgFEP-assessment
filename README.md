@@ -49,6 +49,23 @@ To perform the c-MD benchmark using the AMBER 22 package, we used the complex of
    - Click on the file's name to view its contents.
    - On the file's page, click the "Download" button to save the file to your local machine.
 
+For multiple MD simulations run using AMBER 22 package you can use this following [scripts](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts)
 
+```bash
+#!/bin/bash
+
+# Loop over the CUDA_VISIBLE_DEVICES values
+for device in {0..2}; do
+  # Loop over the output file indices
+  for index in {1..5}; do
+    # Set CUDA_VISIBLE_DEVICES
+    export CUDA_VISIBLE_DEVICES=$device
+    outfile="gpu_cuda_${device}_${index}.out"
+
+    # Run the pmemd.cuda command with the specified output file
+    pmemd.cuda -O -i pmemd_prod.in -p prmtop.parm7 -c restart.rst7 -o $outfile
+
+  done
+done
 
 
