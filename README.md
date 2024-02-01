@@ -1,7 +1,7 @@
 
 # Benchmarks for Molecular Dynamics Simulations with Popular Software Applications and GPU Cards
 
-This GitHub repository provides a comprehensive set of benchmarks for molecular dynamics simulations using conventional MD (c-MD) and Free Energy Perturbations /Thermodynamic Integration (FEP/TI) on different GPU cards with popular software applications such as AMBER 22, Gromacs 23.3, NAMD 3, and OpenMM 8.1. The benchmarks are designed to evaluate the performance of various software applications and GPU cards for molecular dynamics simulations. The repository includes detailed documentation on how to run the benchmarks and how to interpret the results. This benchmarking suite can be helpful for researchers in selecting the most suitable software and hardware for their particular research needs. The repository is open-source and contributions are welcome.
+This GitHub repository provides a comprehensive set of benchmarks for molecular dynamics simulations using conventional MD (c-MD) and Free Energy Perturbations /Thermodynamic Integration (FEP/TI) on different GPU cards with popular software applications such as AMBER 22, Gromacs 23.3, NAMD 3, and OpenMM 8.1. The benchmarks are designed to evaluate the performance of various software applications and GPU cards for molecular dynamics simulations. The repository includes detailed documentation on how to run the benchmarks and how to interpret the results. This benchmarking suite can be helpful for researchers in selecting the most suitable software and hardware for their particular research needs.
 
 
 ## Installation
