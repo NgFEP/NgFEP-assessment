@@ -10,7 +10,7 @@ To install AMBER 22, Gromacs 23.3, NAMD 3, and OpenMM 8.1 on different clusters,
 
 **AMBER 22:**
 
-Visit the [AMBER] [https://ambermd.org/Installation.php.]
+Visit the [AMBER](https://ambermd.org/Installation.php)
 - Follow the installation instructions specific to your cluster and operating system.
 - Make sure to configure AMBER according to your requirements and available resources.
 
