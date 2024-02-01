@@ -40,4 +40,13 @@ Please note that installation procedures may vary depending on your cluster's sp
 ## c-MD Benchmark
 
 To perform the c-MD benchmark using the AMBER 22 package, we used the complex of human Argonaute2 with miR-122 (PDB ID: 6N40) which was previously used by [MDbench](https://mdbench.ace-net.ca/mdbench/datasets/). you will need to download the required input files from the provided [GitHub repository](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/AMBER-benchmark/AMBER_inputs). Here are the steps to download these files:
+1. In the [repository](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/AMBER-benchmark/AMBER_inputs), you will find three required input files:
+   - `pmemd_prod.in`: This is the input file for running molecular dynamics simulations using the AMBER package.
+   - `prmtop.parm7`: This file contains the topology information for your system.
+   - `restart.rst7`: This file contains the initial coordinates and velocities for your simulation.
+
+2. To download each of these files, follow these steps:
+   - Click on the file's name to view its contents.
+   - On the file's page, click the "Download" button to save the file to your local machine.
+
 
