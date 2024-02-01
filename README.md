@@ -49,7 +49,7 @@ To perform the c-MD benchmark using the AMBER 22 package, we used the complex of
    - Click on the file's name to view its contents.
    - On the file's page, click the "Download" button to save the file to your local machine.
 
-For multiple MD simulations run using AMBER 22 package you can use this following [scripts](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts)
+To run multiple MD simulations using the AMBER 22 package, you can use the following bash [script](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts)
 
 ```bash
 #!/bin/bash
