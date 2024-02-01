@@ -13,6 +13,7 @@ To install AMBER 22, Gromacs 23.3, NAMD 3, and OpenMM 8.1 on different clusters,
 Visit the AMBER website at https://ambermd.org/Installation.php.
 - Follow the installation instructions specific to your cluster and operating system.
 - Make sure to configure AMBER according to your requirements and available resources.
+
 **Gromacs 23.3:**
 
 Visit the Gromacs documentation at https://manual.gromacs.org/documentation/current/install-guide/index.html.
@@ -26,6 +27,7 @@ Go to the NAMD website at https://www.ks.uiuc.edu/Research/namd/alpha/3.0alpha/.
 - Download the NAMD 3 version compatible with your cluster and operating system.
 - Follow the installation instructions provided in the NAMD documentation.
 - Make any necessary configuration changes to optimize NAMD for your cluster's resources.
+
 **OpenMM 8.1:**
 
 Access the OpenMM user guide at http://docs.openmm.org/latest/userguide/application/01_getting_started.html#installing-openmm.
