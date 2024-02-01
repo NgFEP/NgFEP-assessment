@@ -69,4 +69,40 @@ for device in {0..2}; do
 done
 ```
 4. To obtain the performance data, you can utilize the following Bash [script](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts/2_extract_results.sh).
+```bash
+#!/bin/bash
+
+# Output file
+output_file="RTX 5000_results_amber.dat"
+temp_file="tmpl"
+
+# Clear the output and temporary files if they already exist
+rm "$output_file"
+
+# Loop through files matching the pattern
+for file in gpu_cuda_2_*.out; do
+    if [[ -f "$file" ]]; then
+        # Calculate the line number for the last 10th line
+        total_lines=$(wc -l < "$file")
+        line_number=$((total_lines - 9))
+
+        # Extracting the last 10th line from each file
+        last_line=$(sed -n "${line_number}p" "$file")
+
+        # Writing the results to the temporary file
+        echo "$last_line" >> "$temp_file"
+#        echo "" >> "$temp_file"
+    fi
+done
+
+# Extract ns/day values and write them to the output file
+grep "ns/day =" "$temp_file" | awk '{print $4}' > "$output_file"
+
+## Optional: Remove temporary file
+ rm "$temp_file"
+
+
+echo "Extracted data saved to $output_file"
+```
+
 
