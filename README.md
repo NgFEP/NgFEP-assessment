@@ -49,7 +49,7 @@ To perform the c-MD benchmark using the AMBER 22 package, we used the complex of
    - Click on the file's name to view its contents.
    - On the file's page, click the "Download" button to save the file to your local machine.
 
-3. To run multiple MD simulations using the AMBER 22 package, you can use the following bash [script](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts/1_run.sh)
+3. To run multiple MD simulations using the AMBER 22 package, you can use the following [Bash script](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts/1_run.sh)
 
 ```bash
 #!/bin/bash
@@ -68,7 +68,9 @@ for device in {0..2}; do
   done
 done
 ```
-4. To obtain the performance data, you can utilize the following Bash [script](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts/2_extract_results.sh).
+This Bash script will create output files named gpu_cuda_0_1.out, gpu_cuda_0_2.out, gpu_cuda_0_3.out, gpu_cuda_0_4.out, and gpu_cuda_0_5.out. You can view an example of what the output file names will look like by visiting this [URL](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case).
+
+5. To obtain the performance data, you can utilize the following [Bash script](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts/2_extract_results.sh).
 ```bash
 #!/bin/bash
 
@@ -104,5 +106,4 @@ grep "ns/day =" "$temp_file" | awk '{print $4}' > "$output_file"
 
 echo "Extracted data saved to $output_file"
 ```
-
-
+After executing the [Bash script](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts/2_extract_results.sh) above, your [benchmark data](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/RTX_5000_results_amber.dat) will be ready. The unit of the data is ns/day.
