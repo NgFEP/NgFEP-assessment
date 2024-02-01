@@ -39,4 +39,5 @@ Please note that installation procedures may vary depending on your cluster's sp
 
 ## c-MD Benchmark
 
-To perform the c-MD benchmark using the AMBER 22 package with the dataset of the complex of human Argonaute2 with miR-122 (PDB ID: 6N40), you will need to download the required input files from the provided [GitHub repository](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/AMBER-benchmark/AMBER_inputs). Here are the steps to download these files:
+To perform the c-MD benchmark using the AMBER 22 package with the dataset of the complex of human Argonaute2 with miR-122 (PDB ID: 6N40), you will need to download the required input files from the provided [GitHub repository](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/AMBER-benchmark/AMBER_inputs). This system was previously used by [MDbench](https://mdbench.ace-net.ca/mdbench/datasets/) Here are the steps to download these files:
+
