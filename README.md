@@ -30,7 +30,7 @@ Go to the [NAMD](https://www.ks.uiuc.edu/Research/namd/alpha/3.0alpha/)
 
 **OpenMM 8.1:**
 
-Access the [OpenMM user guide] (http://docs.openmm.org/latest/userguide/application/01_getting_started.html#installing-openmm)
+Access the [OpenMM user guide](http://docs.openmm.org/latest/userguide/application/01_getting_started.html#installing-openmm)
 - Locate the section on installing OpenMM 8.1.
 - Follow the installation steps tailored to your cluster and platform.
 - Ensure that you set up OpenMM to make the best use of your cluster's capabilities.
