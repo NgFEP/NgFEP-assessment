@@ -355,6 +355,13 @@ plt.show()
 ```
 
 To install jupyter-lab, simply follow the [link](https://jupyter.org/install). It will guide you through the installation process.
+<<<<<<< HEAD
+=======
+
+## Authors
+Contributors names and contact info
+- [Saikat Pal](https://github.com/saikat0003)
+>>>>>>> 0d081aa (modify readme file)
 
 ## Authors
 Contributors names and contact info
