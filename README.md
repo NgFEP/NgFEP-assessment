@@ -110,6 +110,7 @@ After executing the [Bash script](https://github.com/NgFEP/NgFEP-assessment/blob
 
 
 ## Plot
+
 We used the Python-based Jupyter-lab [notebook](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/plot/avg-sd.ipynb) to plot the data.
 
 ![Alt text](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/plot/combined_benchmarks.jpg)
@@ -336,5 +337,7 @@ plt.savefig('combined_benchmarks.jpg', dpi=450, bbox_inches='tight')
 # Display the plot
 plt.show()
 ```
+Here is a clear and grammatically correct version of the text you provided:
 
+To install jupyter-lab, simply follow the [link](https://jupyter.org/install). It will guide you through the installation process.
 
