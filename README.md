@@ -337,7 +337,6 @@ plt.savefig('combined_benchmarks.jpg', dpi=450, bbox_inches='tight')
 # Display the plot
 plt.show()
 ```
-Here is a clear and grammatically correct version of the text you provided:
 
 To install jupyter-lab, simply follow the [link](https://jupyter.org/install). It will guide you through the installation process.
 
