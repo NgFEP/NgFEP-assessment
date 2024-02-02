@@ -108,6 +108,22 @@ echo "Extracted data saved to $output_file"
 ```
 After executing the [Bash script](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts/2_extract_results.sh) above, your [benchmark data](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/RTX_5000_results_amber.dat) will be ready. The unit of the data is ns/day.
 
+To obtain benchmark data using the following software versions:
+- Gromacs 23.3
+- NAMD 3
+- Openmm 8.1
+
+Please follow the steps outlined below:
+
+1. **Gromacs:**
+   - You can find the Gromacs [input files](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/GROMACS-benchmark/GROMACS_inputs) and a bash script for performing [simulations](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/GROMACS-benchmark/benchmark_6n4o_gromacs/cerebro/scripts/1_run_benchmark.sh) and [extracting](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/GROMACS-benchmark/benchmark_6n4o_gromacs/cerebro/scripts/2_extract_results.sh) data.
+
+2. **NAMD 3:**
+   - Similarly, the NAMD 3 [input files](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/NAMD-benchmark/NAMD_inputs) and a bash script for performing [simulations](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/NAMD-benchmark/benchmark_6n4o_namd/case/scripts/1_run_namd3_bench.sh) and [extracting](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/NAMD-benchmark/benchmark_6n4o_namd/case/scripts/2_extract_results.sh) data are also available.
+
+3. **Openmm 8.1:**
+   - Additionally, you can find the Openmm [input files](https://github.com/NgFEP/NgFEP-assessment/tree/main/c-MD/OPENMM-benchmark/OPENMM_inputs) and a bash script for performing [simulations](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/OPENMM-benchmark/benchmark_6n4o_openmm/case/scripts/1_run_benchmark.sh) and [extracting](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/OPENMM-benchmark/benchmark_6n4o_openmm/case/scripts/2_extract_results.sh) data.
+
 
 ## Plot
 
