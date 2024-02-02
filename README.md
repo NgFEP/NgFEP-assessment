@@ -107,3 +107,7 @@ grep "ns/day =" "$temp_file" | awk '{print $4}' > "$output_file"
 echo "Extracted data saved to $output_file"
 ```
 After executing the [Bash script](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/scripts/2_extract_results.sh) above, your [benchmark data](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/AMBER-benchmark/benchmark_6n4o_pmemd/case/RTX_5000_results_amber.dat) will be ready. The unit of the data is ns/day.
+
+
+![Alt text](https://github.com/NgFEP/NgFEP-assessment/blob/main/c-MD/plot/combined_benchmarks.jpg)
+
