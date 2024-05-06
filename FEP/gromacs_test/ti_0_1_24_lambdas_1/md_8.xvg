@@ -1,0 +1,41 @@
+# This file was created Mon Apr 22 12:39:57 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+# 
+# Executable:   /home/sp2546/softwares/gromacs/bin/gmx
+# Data prefix:  /home/sp2546/softwares/gromacs
+# Working dir:  /scratch/sp2546/ti_run_hybrid_1/case_1_24_lamda/forward
+# Command line:
+#   gmx mdrun -s eq_8.tpr -ntomp 4 -deffnm md_8
+# gmx mdrun is part of G R O M A C S:
+#
+# Great Red Oystrich Makes All Chemists Sane
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 298 (K) \xl\f{} state 8: fep-lambda = 0.3600"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} fep-lambda = 0.3600"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.3150"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.3600"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.4050"
+@ s5 legend "pV (kJ/mol)"
+0.0000 -1906142.6 -9.3169031 0.31630234 0.0000000 -0.51826757 65.074310
+10.0000 -1125796.9 -35.323837 1.5139731 0.0000000 -1.6652183 229.84271
+20.0000 -1231816.4 -21.696444 0.92058778 0.0000000 -1.0327704 112.36491
+30.0000 -1346248.8 -18.734194 0.69577839 0.0000000 -0.98874704 65.710922
+40.0000 -1362842.9 -20.985672 0.86710077 0.0000000 -1.0211536 64.678444
+50.0000 -1367134.9 -16.447382 0.62059817 0.0000000 -0.85771973 64.354111
+60.0000 -1368101.0 -19.299080 0.81355090 0.0000000 -0.92240713 63.905800
+70.0000 -1369481.5 -18.332218 0.75915622 0.0000000 -0.88940532 63.975872
+80.0000 -1370178.8 -12.521986 0.50753658 0.0000000 -0.61483636 63.838043
+90.0000 -1371784.6 -22.109715 0.88731089 0.0000000 -1.1003540 63.566616
+100.0000 -1369865.2 -13.281211 0.50568767 0.0000000 -0.68690106 63.688072

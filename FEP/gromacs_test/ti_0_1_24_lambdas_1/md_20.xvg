@@ -1,0 +1,41 @@
+# This file was created Mon Apr 22 14:28:54 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+# 
+# Executable:   /home/sp2546/softwares/gromacs/bin/gmx
+# Data prefix:  /home/sp2546/softwares/gromacs
+# Working dir:  /scratch/sp2546/ti_run_hybrid_1/case_1_24_lamda/forward
+# Command line:
+#   gmx mdrun -s eq_20.tpr -ntomp 4 -deffnm md_20
+# gmx mdrun is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 298 (K) \xl\f{} state 20: fep-lambda = 0.9000"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} fep-lambda = 0.9000"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.8550"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.9000"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.9450"
+@ s5 legend "pV (kJ/mol)"
+0.0000 -1908765.9 -123.86605 5.3701472 0.0000000 -5.7835082 65.074310
+10.0000 -1135966.1 -101.91204 4.4165513 0.0000000 -4.7606982 216.01459
+20.0000 -1238302.4 -108.24860 4.6993310 0.0000000 -5.0481166 87.294022
+30.0000 -1352039.1 -72.882759 3.2104222 0.0000000 -3.3510779 64.933800
+40.0000 -1367819.0 -125.10574 5.4003693 0.0000000 -5.8654269 64.153610
+50.0000 -1368456.0 -112.93574 4.9001443 0.0000000 -5.2690409 63.915298
+60.0000 -1370848.5 -83.888435 3.6854490 0.0000000 -3.8648010 63.656307
+70.0000 -1371575.1 -129.81367 5.6116406 0.0000000 -6.0762100 63.899113
+80.0000 -1371357.4 -113.09417 4.8753547 0.0000000 -5.3100168 63.589661
+90.0000 -1371213.9 -138.03307 5.9683131 0.0000000 -6.4626064 63.527821
+100.0000 -1371309.0 -100.87814 4.3776478 0.0000000 -4.7049184 63.670193

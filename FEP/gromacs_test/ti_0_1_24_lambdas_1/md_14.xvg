@@ -1,0 +1,41 @@
+# This file was created Mon Apr 22 13:34:28 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+# 
+# Executable:   /home/sp2546/softwares/gromacs/bin/gmx
+# Data prefix:  /home/sp2546/softwares/gromacs
+# Working dir:  /scratch/sp2546/ti_run_hybrid_1/case_1_24_lamda/forward
+# Command line:
+#   gmx mdrun -s eq_14.tpr -ntomp 4 -deffnm md_14
+# gmx mdrun is part of G R O M A C S:
+#
+# GROup of MAchos and Cynical Suckers
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 298 (K) \xl\f{} state 14: fep-lambda = 0.6300"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} fep-lambda = 0.6300"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.5850"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.6300"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.6750"
+@ s5 legend "pV (kJ/mol)"
+0.0000 -1906223.5 -57.205948 2.4580150 0.0000000 -2.6889721 65.074310
+10.0000 -1133014.8 -45.858906 1.9339011 0.0000000 -2.1945823 229.10155
+20.0000 -1233098.9 -72.793098 3.1349152 0.0000000 -3.4186677 111.77770
+30.0000 -1347005.2 -60.743858 2.5932078 0.0000000 -2.8737559 65.610794
+40.0000 -1367070.4 -51.332973 2.1834451 0.0000000 -2.4368020 64.552078
+50.0000 -1368764.8 -60.205364 2.5596618 0.0000000 -2.8598326 64.045807
+60.0000 -1370766.6 -59.415173 2.4840147 0.0000000 -2.8636839 63.990215
+70.0000 -1370262.1 -49.014374 2.0787459 0.0000000 -2.3329573 63.762966
+80.0000 -1372485.2 -55.146366 2.3216028 0.0000000 -2.6414881 63.835892
+90.0000 -1372174.2 -47.799988 2.0129145 0.0000000 -2.2878474 63.861401
+100.0000 -1371210.5 -27.894310 1.2035014 0.0000000 -1.3019817 63.663593

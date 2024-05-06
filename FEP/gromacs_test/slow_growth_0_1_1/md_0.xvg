@@ -1,0 +1,29 @@
+# This file was created Mon Apr 22 12:19:48 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+# 
+# Executable:   /home/sp2546/softwares/gromacs/bin/gmx
+# Data prefix:  /home/sp2546/softwares/gromacs
+# Working dir:  /scratch/sp2546/ti_run_hybrid_1/slow_growth_0_1/forward
+# Command line:
+#   gmx mdrun -s eq_0.tpr -ntomp 4 -deffnm md_0
+# gmx mdrun is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "dH/d\xl\f{}"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 298 (K) "
+0.0000 -1900923.6 107.53584
+10.0000 -1127903.5 53.302475
+20.0000 -1233119.9 4.7415056
+30.0000 -1343182.8 -9.0091496
+40.0000 -1364097.2 -23.990717
+50.0000 -1371279.8 -18.435997
+60.0000 -1371427.5 -69.752426
+70.0000 -1372207.4 -55.369339
+80.0000 -1371187.2 -77.413620
+90.0000 -1372221.8 -98.785942
+100.0000 -1373146.8 -171.70319

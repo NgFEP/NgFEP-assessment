@@ -1,0 +1,41 @@
+# This file was created Mon Apr 22 11:46:55 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+# 
+# Executable:   /home/sp2546/softwares/gromacs/bin/gmx
+# Data prefix:  /home/sp2546/softwares/gromacs
+# Working dir:  /scratch/sp2546/ti_run_hybrid_1/case_1_24_lamda/forward
+# Command line:
+#   gmx mdrun -s eq_2.tpr -ntomp 4 -deffnm md_2
+# gmx mdrun is part of G R O M A C S:
+#
+# Great Red Owns Many ACres of Sand 
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 298 (K) \xl\f{} state 2: fep-lambda = 0.0900"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} fep-lambda = 0.0900"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.0450"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.0900"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.1350"
+@ s5 legend "pV (kJ/mol)"
+0.0000 -1908615.1 76.537674 -3.5691201 0.0000000 3.3372170 65.074310
+10.0000 -1132236.0 25.482964 -1.2910090 0.0000000 1.0067377 224.58534
+20.0000 -1234594.5 7.2955432 -0.41293629 0.0000000 0.24536427 101.98582
+30.0000 -1346373.2 27.727411 -1.4080933 0.0000000 1.0933044 66.017517
+40.0000 -1365440.8 0.80104530 -0.10258378 0.0000000 -0.029557334 64.818787
+50.0000 -1366678.2 28.612131 -1.4062366 0.0000000 1.1677112 64.277275
+60.0000 -1367980.5 57.190269 -2.7626589 0.0000000 2.3942202 63.942917
+70.0000 -1370054.2 89.619949 -4.1119067 0.0000000 3.9771411 63.538269
+80.0000 -1372293.4 23.340185 -1.1252018 0.0000000 0.98085363 63.703655
+90.0000 -1373582.8 15.596621 -0.73361527 0.0000000 0.67651688 63.614727
+100.0000 -1372536.0 10.133835 -0.47567458 0.0000000 0.44360061 63.375614
